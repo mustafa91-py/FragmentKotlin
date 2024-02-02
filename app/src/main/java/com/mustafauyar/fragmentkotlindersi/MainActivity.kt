@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         val firstFragment = BlankFragment()
+        //fragmentTransaction.replace(parent,child).pack() tkinter gibi
         fragmentTransaction.replace(R.id.frameLayout,firstFragment).commit()
     }
     fun secondFragment(view: View){
